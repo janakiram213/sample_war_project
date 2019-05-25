@@ -31,12 +31,9 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
-            </plugin>
-    
-        </plugins>
-    </build>
-          <build>
-         <plugins>
+             </plugin>
+            </plugins>
+        <plugins>
            <plugin>
             <groupId>org.apache.tomcat.maven</groupId>
              <artifactId>tomcat7-maven-plugin</artifactId>
