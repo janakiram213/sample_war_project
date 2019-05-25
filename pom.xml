@@ -16,33 +16,31 @@
         </dependency>
     </dependencies>
     <build>
-        <plugins>
-            <plugin>
+     <plugins>
+           <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.2</version>
                 <configuration>
                     <source>1.6</source>
                     <target>1.6</target>
                 </configuration>
-            </plugin>
+          </plugin>
             <plugin>
-                <artifactId>maven-war-plugin</artifactId>
+                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.5</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
+                   <configuration>
+                     <failOnMissingWebXml>false</failOnMissingWebXml>
+                  </configuration>
              </plugin>
-            </plugins>
-        <plugins>
-           <plugin>
+            <plugin>
             <groupId>org.apache.tomcat.maven</groupId>
              <artifactId>tomcat7-maven-plugin</artifactId>
-             <version>2.2</version>
-             <configuration>
-             <url>http://localhost:8080/manager/text</url>
-             <server>TomcatServer</server>
-             <path>/WebApps</path>
-             </configuration>
+              <version>2.2</version>
+               <configuration>
+                 <url>http://localhost:8089/manager/text</url>
+                 <server>TomcatServer</server>
+                 <path>/WebApps</path>
+              </configuration>
           </plugin>
         </plugins>
     </build>
