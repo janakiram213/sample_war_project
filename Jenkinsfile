@@ -24,7 +24,7 @@ stage ('Package'){
     }
 
    stage ('deploy to tomcat'){
-      sshagent(['tomcat-proj']) {
+      sshagent(['tomcat-dev']) {
           sh 'scp -o StrictHostKeyChecking=no target/*.war root@172.31.86.233:/root/apache-tomcat-7.0.94/webapps'
     }
   }
