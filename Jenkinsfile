@@ -25,7 +25,7 @@ stage ('Package'){
 
    stage ('deploy to tomcat'){
       sshagent(['tomcat-dev']) {
-          sh 'scp -o StrictHostKeyChecking=no /home/jenkins-slave-01/workspace/deploy_war_file/target/hello-1.0.war  ec2-user@172.31.86.233:home/ec2-user/apache-tomcat-7.0.94/webapps'
+          sh 'scp -o StrictHostKeyChecking=no target/*/home/jenkins-slave-01/workspace/deploy_war_file/target/hello-1.0.war  ec2-user@172.31.86.233:home/ec2-user/apache-tomcat-7.0.94/webapps'
     }
   }
 }    
